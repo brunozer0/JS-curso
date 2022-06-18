@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a sua nacionalidade</title>
+    <style>
+        body {
+            background-color: coral;
+            width: 200px;
+            margin: auto;
+     
+        }
+        
+           
+            
+    </style>
+</head>
+<body>
+    <h1>Descubra sua origem</h1>
+    <p>Digite o seu nome:  <input type="text" name="yname" id="yname"></p>
+    <p>Onde Você vive? <input type="text" name="txtnac" id="txtnac"></p>
+
+    
+
+    <input type="button" value="Enviar Informação" onclick="enviar()">
+
+    <div id="info">
+        
+    </div>
+
+    <script>
+        function enviar() {
+            let nacionalidade = document.querySelector('input#txtnac')
+
+            let res = document.querySelector('div#info')
+
+            let pais = nacionalidade.value.toLowerCase()
+
+            let mostrar = nacionalidade.value
+
+            let yname = document.querySelector('input#yname')
+
+            let outname = yname.value
+
+            res.innerHTML = `Olá ${outname}, Você é do país ${mostrar}`
+
+
+       if (pais == 'brasil'){
+                res.innerHTML += '<p>Você é Brasileiro.</p>'
+            } else   {
+                res.innerHTML += '<p> Você é Estrangeiro. </p>'
+            }
+        }
+
+        
+
+
+
+    </script>
+    </script>
+</body>
+</html>
