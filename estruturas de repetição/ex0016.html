@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-size: 18px;
+            text-align: center;
+            margin: auto;
+        }
+        section {
+            width: 800px;
+            border: 1px solid black;
+            text-align: left;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: lemonchiffon;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VAMOS CONTAR</h1>
+    </header>
+    <section>
+        <div>
+            <p>Início:<input type="number" name="inicio" id="txti"></p>
+            <p>Fim:<input type="number" name="fim" id="txtf"></p>
+            <p>Passo:<input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar()"></p>
+        </div>
+
+        <div id="res">
+            <p>Preparando a contagem</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;CursoemVideo</p>
+    </footer>
+    <script src="ex0016.js"></script>
+</body>
+</html>
